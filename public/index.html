@@ -1,13 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SuperCar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Olá mundo</h1>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">SuperCar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lancamento">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="bg-secondary text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Bem-vindo ao SuperCar</h1>
+      <p class="lead">Explore os melhores modelos de carros esportivos e de luxo.</p>
+      <a href="#modelos" class="btn btn-dark btn-lg">Ver Modelos</a>
+    </div>
+  </header>
+
+
+  <main class="py-5">
+    <div class="container">
+
+      <section id="modelos" class="mb-5">
+        <h2 class="mb-4">Nossos Modelos</h2>
+        <div class="row g-4" id="lista-carros">
+
+        </div>
+      </section>
+
+    
+      <section id="lancamento" class="mb-5">
+        <h2 class="mb-4">Lançamento Exclusivo</h2>
+        <div class="card p-3 p-md-4 shadow-sm">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-4 text-center">
+              <img src="gtr.jpeg" alt="Thunder GT" class="img-fluid rounded"
+                   style="max-height:220px; object-fit:cover;">
+            </div>
+            <div class="col-md-8">
+              <h3 class="mb-2">Thunder GT</h3>
+              <p class="mb-0">700cv, 0-100km/h em 2.9s, design futurista.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contato" class="mb-5">
+        <h2 class="mb-4">Entre em Contato</h2>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <form class="row g-3" novalidate>
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="col-12">
+                <label for="msg" class="form-label">Mensagem:</label>
+                <textarea id="msg" name="msg" rows="4" class="form-control" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <small>&copy; 2025 SuperCar - Luan Deivid</small>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+
+    carregarCarros();
+  </script>
 </body>
 </html>
