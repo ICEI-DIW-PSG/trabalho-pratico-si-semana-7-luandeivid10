@@ -28,13 +28,46 @@
   </nav>
 
 
-  <header class="bg-secondary text-white py-5">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold">Bem-vindo ao SuperCar</h1>
-      <p class="lead">Explore os melhores modelos de carros esportivos e de luxo.</p>
-      <a href="#modelos" class="btn btn-dark btn-lg">Ver Modelos</a>
+<header>
+  <div id="carouselSuperCar" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="bmw.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;" alt="Speedster X">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1 class="fw-bold">Bem-vindo ao SuperCar</h1>
+          <p>Explore os melhores modelos de carros esportivos e de luxo.</p>
+          <a href="#modelos" class="btn btn-primary btn-lg">Ver Modelos</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="carro.png" class="d-block w-100" style="height:500px; object-fit:cover;" alt="Urban SUV">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1>esportivos</h1>
+          <p>Velocidade e Adrenalina</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2025-mclaren-w1.png" class="d-block w-100" style="height:500px; object-fit:cover;" alt="EcoDrive">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h1>EcoDrive</h1>
+          <p>Carros Rápidos</p>
+        </div>
+      </div>
     </div>
-  </header>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSuperCar" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSuperCar" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselSuperCar" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselSuperCar" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselSuperCar" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+</header>
+
 
 
   <main class="py-5">
