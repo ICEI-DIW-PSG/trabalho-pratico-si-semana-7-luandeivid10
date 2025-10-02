@@ -13,32 +13,41 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Luan Deivid
+- Matricula: 904044
+- Proposta de projeto escolhida: Carros
+- Breve descrição sobre seu projeto: Um site sobre carros, seus lançamentos e informações sobre eles.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![](public/home.png)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![](public/detalhe.png)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
-```javascript
-const dados = [
+const carros = [
   {
     "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
+    "nome": "Speedster X",
+    "descricao": "Motor V8 500cv, performance máxima.",
+    "detalhes": "O Speedster X é equipado com um motor V8 de 500cv, tração integral e câmbio automático de 7 marchas. Ideal para quem busca desempenho e emoção.",
+    "imagem": "Porsche-1.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Urban SUV",
+    "descricao": "Conforto e robustez para viagens.",
+    "detalhes": "O Urban SUV combina tecnologia e segurança, com espaço interno amplo, motor turbo eficiente e sistema de entretenimento de última geração.",
+    "imagem": "urban.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "EcoDrive",
+    "descricao": "100% elétrico, autonomia de 600km.",
+    "detalhes": "O EcoDrive é o futuro da mobilidade. Sustentável, com recarga rápida e autonomia de até 600 km, além de tecnologia de direção semiautônoma.",
+    "imagem": "eco.jpg"
   }
-]
-```
+];
